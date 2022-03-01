@@ -17,12 +17,6 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->string("product_name",100);
             $table->bigInteger("product_price");
-            $table->string('form');
-            $table->string('formula')->nullable();
-            $table->string('description')->nullable();
-            $table->boolean('faskes_1')->default(false);
-            $table->boolean('faskes_2')->default(false);
-            $table->boolean('faskes_3')->default(false);
             $table->timestamps();
         });
     }
